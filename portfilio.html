@@ -1,0 +1,260 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hashem Kamal | Full Stack Developer</title>
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Animate.css for animations -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+
+<style>
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+    color: #e2e8f0;
+    min-height: 100vh;
+    font-weight: 300;
+}
+
+header {
+    background: linear-gradient(135deg, #020617 0%, #0f172a 100%);
+    padding: 80px 0;
+    text-align: center;
+    color: white;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    animation: fadeInDown 1s ease-out;
+}
+
+header p {
+    font-size: 1.25rem;
+    opacity: 0.9;
+    animation: fadeInUp 1s ease-out 0.5s both;
+}
+
+section {
+    padding: 60px 0;
+}
+
+.card {
+    background: rgba(30, 41, 59, 0.8);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(56, 189, 248, 0.2);
+    border-radius: 15px;
+    padding: 30px;
+    margin: 20px 0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 0;
+    animation: fadeIn 1s ease-out both;
+}
+
+.card:nth-child(1) { animation-delay: 0.1s; }
+.card:nth-child(2) { animation-delay: 0.2s; }
+.card:nth-child(3) { animation-delay: 0.3s; }
+.card:nth-child(4) { animation-delay: 0.4s; }
+.card:nth-child(5) { animation-delay: 0.5s; }
+p {
+    color: #cbd5e1;
+}
+.h4 {
+    color: #7b9099;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+}
+
+a {
+    color: #38bdf8;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #0ea5e9;
+}
+
+footer {
+    background: #020617;
+    padding: 20px 0;
+    text-align: center;
+    color: #94a3b8;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container-fluid">
+<header class="text-center py-5">
+<h1 class="display-4 fw-light">Hashem Kamal</h1>
+<p class="lead">Full Stack Developer | ASP.NET MVC Core | Angular</p>
+</header>
+</div>
+
+<div class="container">
+<section class="animate__animated animate__fadeIn">
+<h2 class="h1 mb-4 text-center">About Me</h2>
+<p class="lead text-center">
+Full Stack Developer with hands-on experience in building web
+applications using ASP.NET Core MVC, Entity Framework Core, and SQL Server.
+Skilled in developing secure, scalable back-end systems and responsive front-end interfaces.
+Passionate about clean code, problem-solving, and continuous learning to deliver high-quality
+software solutions.
+</p>
+</section>
+
+<section class="animate__animated animate__fadeIn">
+<h2 class="h1 mb-4 text-center">Technical Skills</h2>
+
+<div class="card">
+<b class="text-primary">Backend</b>
+<p>C#, ASP.NET Core MVC, ASP.NET Core Web API, Entity Framework Core, LINQ,
+Dependency Injection, RESTful APIs</p>
+</div>
+
+<div class="card">
+<b class="text-success">Frontend</b>
+<p>Angular, JavaScript, jQuery, HTML5, CSS3, Bootstrap, Responsive Design</p>
+</div>
+
+<div class="card">
+<b class="text-warning">Database</b>
+<p>Microsoft SQL Server, Database Design, CRUD Operations, Data Modeling, Stored
+Procedures</p>
+</div>
+</section>
+
+<section class="animate__animated animate__fadeIn">
+<h2 class="h1 mb-4 text-center">Projects</h2>
+
+<div class="card">
+<h3 class="h4">Banking-System</h3>
+<p>A complete banking application that supports deposits, withdrawals, transfers between accounts, transaction history</p>
+<a href="https://github.com/hashemKamal/Banking-System" class="btn btn-outline-primary">View Project</a>
+</div>
+
+<div class="card">
+<h3 class="h4">Hospital Management System</h3>
+<p>Hospital Management Studio is a comprehensive system designed to streamline hospital and clinic operations.</p>
+<a href="https://github.com/hashemKamal/Hospital-Manegment-System" class="btn btn-outline-primary">View Project</a>
+</div>
+
+<div class="card">
+<h3 class="h4">Cindrella Pie Shop</h3>
+<p>Pie shop web site with mock APIs FrontEnd</p>
+<a href="https://github.com/hashemKamal/Cindrella-Pie-Shop" class="btn btn-outline-primary">View Project</a>
+</div>
+
+<div class="card">
+<h3 class="h4">Category And Products Project</h3>
+<p>New Category And Products Project Last Version with .Net 10</p>
+<a href="https://github.com/hashemKamal/New-Category-And-Products-Project" class="btn btn-outline-primary">View Project</a>
+</div>
+
+<div class="card">
+<h3 class="h4">Products Project</h3>
+<p>This project was generated using Angular CLI version 19.1.5</p>
+<a href="https://github.com/hashemKamal/Product" class="btn btn-outline-primary">View Project</a>
+</div>
+</section>
+
+<section class="animate__animated animate__fadeIn">
+<h2 class="h1 mb-4 text-center">Contact</h2>
+
+<p class="text-center"><strong>LinkedIn:</strong></p>
+<a href="https://www.linkedin.com/in/hashem-kamal-95587b361" class="d-block text-center mb-3">
+linkedin.com/in/hashem-kamal
+</a>
+
+<p class="text-center"><strong>GitHub:</strong></p>
+<a href="https://github.com/hashemKamal" class="d-block text-center">
+github.com/hashemKamal
+</a>
+</section>
+</div>
+
+<footer class="bg-dark text-light py-3 mt-5">
+<p class="mb-0">© 2026 Hashem Kamal</p>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Typing effect for header
+    const text = "Hashem Kamal";
+    const h1 = document.querySelector('h1');
+    h1.textContent = '';
+    let i = 0;
+    const typeWriter = () => {
+        if (i < text.length) {
+            h1.textContent += text.charAt(i);
+            i++;
+            setTimeout(typeWriter, 150);
+        }
+    };
+    typeWriter();
+
+    // Scroll animations
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('animate__fadeIn');
+            }
+        });
+    }, observerOptions);
+
+    // Observe sections
+    document.querySelectorAll('section').forEach(section => {
+        observer.observe(section);
+    });
+
+    // Observe cards
+    document.querySelectorAll('.card').forEach(card => {
+        observer.observe(card);
+    });
+});
+</script>
+
+</body>
+</html>
